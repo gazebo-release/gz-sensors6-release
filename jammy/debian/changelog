@@ -1,0 +1,5 @@
+ignition-sensors6 (6.1.0-2~jammy) jammy; urgency=medium
+
+  * First release for jammy
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 11 Mar 2022 17:59:37 +0100
