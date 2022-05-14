@@ -1,3 +1,9 @@
+ignition-sensors6 (6.4.0-1~jammy) jammy; urgency=medium
+
+  * ignition-sensors6 6.4.0-1 release
+
+ -- Ian Chen <ichen@openrobotics.org>  Fri, 13 May 2022 18:05:59 -0700
+
 ignition-sensors6 (6.3.0-2~jammy) jammy; urgency=medium
 
   * ignition-sensors6 6.3.0-2 release
