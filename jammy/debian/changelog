@@ -1,3 +1,9 @@
+ignition-sensors6 (6.5.0-1~jammy) jammy; urgency=medium
+
+  * ignition-sensors6 6.5.0-1 release
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 25 May 2022 08:35:18 -0500
+
 ignition-sensors6 (6.4.0-1~jammy) jammy; urgency=medium
 
   * ignition-sensors6 6.4.0-1 release
