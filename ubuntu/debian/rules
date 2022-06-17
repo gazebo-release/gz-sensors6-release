@@ -12,6 +12,7 @@ override_dh_install:
 	# need to remove files present in components
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/AirPressure*.hh
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/Altimeter*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/BoundingBoxCamera*.hh
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/Camera*.hh
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/DepthCamera*.hh
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/GpuLidarSensor*.hh
