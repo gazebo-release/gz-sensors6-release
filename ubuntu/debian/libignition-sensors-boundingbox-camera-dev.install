@@ -1,0 +1,5 @@
+usr/include/ignition/sensors*/ignition/sensors/boundingbox_camera/*
+usr/include/ignition/sensors*/ignition/sensors/BoundingBoxCamera*.hh
+usr/lib/*/cmake/ignition-sensors[0-99]-boundingbox_camera/*
+usr/lib/*/libignition-sensors[0-99]-boundingbox_camera.so
+usr/lib/*/pkgconfig/ignition-sensors[0-99]-boundingbox_camera.pc
