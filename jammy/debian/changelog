@@ -1,3 +1,9 @@
+ignition-sensors6 (6.6.0-3~jammy) jammy; urgency=medium
+
+  * ignition-sensors6 6.6.0-3 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Tue, 16 Aug 2022 16:01:08 -0700
+
 ignition-sensors6 (6.6.0-2~jammy) jammy; urgency=medium
 
   * ignition-sensors6 6.6.0-2 release
