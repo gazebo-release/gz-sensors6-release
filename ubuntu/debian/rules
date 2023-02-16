@@ -1,7 +1,16 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+.PHONY: override_dh_auto_configure \
+        override_dh_install \
+        override_dh_auto_test
 
 %:
-	dh $@
+	dh $@ --parallel
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
@@ -26,7 +35,26 @@ override_dh_install:
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/ThermalCamera*.hh
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/Rendering*.hh
 	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/ignition/sensors/RgbdCamera*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/AirPressure*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/Altimeter*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/BoundingBoxCamera*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/Camera*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/DepthCamera*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/GpuLidarSensor*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/ForceTorque*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/Imu*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/Lidar*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/LogicalCamera*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/Magnetometer*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/NavSat*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/SegmentationCamera*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/ThermalCamera*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/Rendering*.hh
+	$(RM) debian/libignition-sensors*-core-dev/usr/include/ignition/sensors*/gz/sensors/RgbdCamera*.hh
 
-# tests require GPU and graphics
+	dh_missing --list-missing
+
+# test cannot run in parallel
 override_dh_auto_test:
 	true
+# dh_auto_test --max-parallel=1

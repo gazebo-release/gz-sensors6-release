@@ -1,6 +1,6 @@
-ignition-sensors6 (6.7.0~pre1-1~jammy) jammy; urgency=medium
+ignition-sensors6 (6.7.0~pre1-2~jammy) jammy; urgency=medium
 
-  * ignition-sensors6 6.7.0~pre1-1 release
+  * ignition-sensors6 6.7.0~pre1-2 release
 
  -- Nate Koenig <nate@openrobotics.org>  Mon, 13 Feb 2023 15:43:34 -0800
 
