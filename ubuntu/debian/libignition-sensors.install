@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-usr/lib/*/libignition-sensors[0-99].so.*
-=======
 usr/lib/*/lib*-sensors[0-99].so.*
->>>>>>> e9022cf65cffc2b9b62b92851f090004cddb4bd4
 usr/share/*/*-sensors*/*
