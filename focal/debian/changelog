@@ -1,3 +1,9 @@
+ignition-sensors6 (6.10.0-1~focal) focal; urgency=medium
+
+  * ignition-sensors6 6.10.0-1 release
+
+ -- Carlos Agüero <caguero@honurobotics.com>  Fri, 23 Oct 2026 17:13:43 +0100
+
 ignition-sensors6 (6.9.0-1~focal) focal; urgency=medium
 
   * ignition-sensors6 6.9.0-1 release
